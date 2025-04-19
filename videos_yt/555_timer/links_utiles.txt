@@ -1,0 +1,4 @@
+Links
+- Calculadora de frecuencia: https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-555-timer 
+- Explicación 555 (UV): https://www.uv.es/marinjl/electro/555.htm
+- Wikipedia: https://es.wikipedia.org/wiki/Circuito_integrado_555

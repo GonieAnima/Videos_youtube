@@ -19,6 +19,8 @@ const int boton3Pin = 8;
 const int motorPin2 = 6; // Pin para el motor DC 
 const int motorPin1 = 4; // Pin para el motor DC
 
+const int speed = 160; // Velocidad del motor DC (0-255)
+
 // Variables para los valores de los botones y relés
 int valorBoton1 = 0;
 int valorBoton2 = 0;
@@ -148,11 +150,11 @@ void loop() {
         // Control de dirección del motor según toggle2
         if (!toggle2) {
         analogWrite(motorPin1, 0);   // 
-        analogWrite(motorPin2, 255);  // 
+        analogWrite(motorPin2, speed);  // 
         delay(2500); // Espera para cambiar dirección
         } 
         else {
-        analogWrite(motorPin1, 255);   // 
+        analogWrite(motorPin1, speed);   // 
         analogWrite(motorPin2, 0);   // 
         delay(2500); // Espera para cambiar dirección
     }

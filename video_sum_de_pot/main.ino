@@ -147,13 +147,13 @@ void loop() {
         
         // Control de dirección del motor según toggle2
         if (!toggle2) {
-        digitalWrite(motorPin1, LOW);   // 
-        digitalWrite(motorPin2, HIGH);  // 
+        analogWrite(motorPin1, 0);   // 
+        analogWrite(motorPin2, 255);  // 
         delay(2500); // Espera para cambiar dirección
         } 
         else {
-        digitalWrite(motorPin1, HIGH);  // 
-        digitalWrite(motorPin2, LOW);   // 
+        analogWrite(motorPin1, 255);   // 
+        analogWrite(motorPin2, 0);   // 
         delay(2500); // Espera para cambiar dirección
     }
 
